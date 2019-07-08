@@ -641,20 +641,21 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
             case MOVEMENT_DIRECTION_NORTH:
                 // Key swipe up action. Type capitalized key
                 // TODO: Change KeyGraphics to new
-                onUpEvent(x, y, eventTime);
+
+                onSwipedUp(x, y, eventTime);
                 break;
             case MOVEMENT_DIRECTION_NORTHEAST:
                 break;
             case MOVEMENT_DIRECTION_EAST:
                 break;
-            case MOVEMENT_DIRECTION_SOUTHEAST:
-                break;
             case MOVEMENT_DIRECTION_SOUTH:
                 // Key swipe down action. Type hint special key.
                 // TODO: Change KeyGraphics to new
-                onUpEvent(x, y, eventTime);
+                onSwipedDown(x, y, eventTime);
                 break;
+            case MOVEMENT_DIRECTION_SOUTHEAST:
             case MOVEMENT_DIRECTION_SOUTHWEST:
+                onSwipedDownAlt(x, y, eventTime);
                 break;
             case MOVEMENT_DIRECTION_WEST:
                 break;
@@ -1051,7 +1052,15 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         return Settings.getInstance().getCurrent().mKeySwipeEnabled;
     }
 
-    private  boolean isKeySwiped() {
+    private boolean isKeySwiped() {
         return mKeySwiped;
+    }
+
+    private void onSwipedUp(final int x, final int y, final long eventTime) { onUpEvent(x, y, eventTime); }
+
+    private void onSwipedDown(final int x, final int y, final long eventTime) { onUpEvent(x, y, eventTime); }
+
+    private void onSwipedDownAlt(final int x, final int y, final long eventTime) {
+
     }
 }
