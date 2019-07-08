@@ -1,16 +1,32 @@
-# Simple Keyboard
+# Simple Keyboard Forked
 
 Forked from https://github.com/rkkr/simple-keyboard
 
-Я хочу добавить несколько дополнительных приятных мелочей и подучиться в программировании на Andriod.  
-
 I want to add a few extra nice little things and learn some programming on Andriod.  
   
+  
+  
+Я хочу добавить несколько дополнительных приятных мелочей и подучиться в программировании на Andriod.  
+ 
+### Что я хотел бы видеть в программе
 
-  
-  
-Original README from rkkr/simple-keyboard
----
+- [x] Определение напревления свайпа
+  - [x] Свайп вверх
+    - [x] Печать заглавной буквы
+    - [ ] Всплывающая посказка вводимого символа
+  - [x] Свайп вниз
+    - [x] Печать дополнительного символа
+    - [ ] Перенос меню дополнительных клавиш с возможностью выбора клавиши
+    - [ ] Всплывающая посказка вводимого символа
+  - [ ] Свайп влево
+  - [ ] Свайп вправо
+- [ ] Переделать некоторые шаблоны клавиатур
+  - [ ] Шаблон Т9 для цифровой клавиатуры
+  - [ ] Дополнительные символы в шаблонах клавиатур с цифровой панелью
+
+
+
+# Original README from rkkr/simple-keyboard
 Forked from https://android.googlesource.com/platform/packages/inputmethods/LatinIME/
 
 <img src="images/screenshot-0.png"
