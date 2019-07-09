@@ -1061,6 +1061,8 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     private void onSwipedDown(final int x, final int y, final long eventTime) { onUpEvent(x, y, eventTime); }
 
     private void onSwipedDownAlt(final int x, final int y, final long eventTime) {
-
+        mLastX = x;
+        mLastY = y;
+        onLongPressed();
     }
 }
