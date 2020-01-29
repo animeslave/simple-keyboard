@@ -1,7 +1,6 @@
 # Simple Keyboard Forked
 
 Forked from https://github.com/rkkr/simple-keyboard
-
 I want to add a few extra nice little things and learn some programming on Andriod.  
   
   
@@ -17,10 +16,9 @@ I want to add a few extra nice little things and learn some programming on Andri
     - [x] Печать дополнительного символа
     - [ ] Перенос меню дополнительных клавиш с возможностью выбора клавиши
     - [ ] Всплывающая посказка вводимого символа
-  - [ ] Свайп влево
-  - [ ] Свайп вправо
-- [ ] Переделать некоторые шаблоны клавиатур
-  - [ ] Шаблон Т9 для цифровой клавиатуры
+- [X] Переделать некоторые шаблоны клавиатур
+  - [X] Шаблон Т9 для цифровой клавиатуры
+    - [ ] Выднлить некоторые символы
   - [ ] Дополнительные символы в шаблонах клавиатур с цифровой панелью
 
 
