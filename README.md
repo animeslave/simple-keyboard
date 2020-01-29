@@ -21,7 +21,9 @@ I want to add a few extra nice little things and learn some programming on Andri
     - [ ] Выднлить некоторые символы
   - [ ] Дополнительные символы в шаблонах клавиатур с цифровой панелью
 
-
+<img src="images/screenshot-1.png"
+      alt="closeup"
+      width="500"/>
 
 # Original README from rkkr/simple-keyboard
 Forked from https://android.googlesource.com/platform/packages/inputmethods/LatinIME/
