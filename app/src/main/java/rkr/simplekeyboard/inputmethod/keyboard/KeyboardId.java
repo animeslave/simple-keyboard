@@ -65,6 +65,7 @@ public final class KeyboardId {
     public final String mCustomActionLabel;
     public final boolean mShowMoreKeys;
     public final boolean mShowNumberRow;
+    public final boolean mShowT9NumberRow;
 
     private final int mHashCode;
 
@@ -81,6 +82,7 @@ public final class KeyboardId {
                 ? mEditorInfo.actionLabel.toString() : null;
         mShowMoreKeys = params.mShowMoreKeys;
         mShowNumberRow = params.mShowNumberRow;
+        mShowT9NumberRow = params.mShowT9NumberRow;
 
         mHashCode = computeHashCode(this);
     }

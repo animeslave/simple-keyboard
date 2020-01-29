@@ -67,4 +67,5 @@
     <string name="subtype_in_root_locale_sr_ZZ">Сербский</string>
     <string name="subtype_in_root_locale_hi_ZZ">Хинглиш</string>
     <string name="english_ime_settings" translatable="false">Настройки</string>
+    <string name="show_t9_number_row">Отображать T9-раскладку для цифр</string>
 </resources>

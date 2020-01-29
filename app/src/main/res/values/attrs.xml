@@ -382,6 +382,7 @@
         <attr name="countryCode" format="string" />
         <attr name="showExtraChars" format="boolean" />
         <attr name="showNumberRow" format="boolean" />
+        <attr name="showT9NumberRow" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="Keyboard_KeyStyle">

@@ -5,7 +5,6 @@ Forked from https://github.com/rkkr/simple-keyboard
 I want to add a few extra nice little things and learn some programming on Andriod.  
   
   
-  
 Я хочу добавить несколько дополнительных приятных мелочей и подучиться в программировании на Andriod.  
  
 ### Что я хотел бы видеть в программе
@@ -20,7 +19,6 @@ I want to add a few extra nice little things and learn some programming on Andri
     - [ ] Всплывающая посказка вводимого символа
   - [ ] Свайп влево
   - [ ] Свайп вправо
-- [ ] Сделать конструктор шаблонов клавиатур `возможно придется переделать часть шаблонов` 
 - [ ] Переделать некоторые шаблоны клавиатур
   - [ ] Шаблон Т9 для цифровой клавиатуры
   - [ ] Дополнительные символы в шаблонах клавиатур с цифровой панелью

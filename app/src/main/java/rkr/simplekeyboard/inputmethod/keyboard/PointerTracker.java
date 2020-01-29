@@ -638,29 +638,28 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         setReleasedKeyGraphics(oldKey, true /* withAnimation */);
         getMovementDirection(x, y);
         switch (mMovementDirection) {
+            case MOVEMENT_DIRECTION_NORTHWEST:
+            case MOVEMENT_DIRECTION_NORTHEAST:
             case MOVEMENT_DIRECTION_NORTH:
                 // Key swipe up action. Type capitalized key
                 // TODO: Change KeyGraphics to new
 
                 onSwipedUp(x, y, eventTime);
                 break;
-            case MOVEMENT_DIRECTION_NORTHEAST:
-                break;
-            case MOVEMENT_DIRECTION_EAST:
-                break;
+
+            case MOVEMENT_DIRECTION_SOUTHEAST:
+            case MOVEMENT_DIRECTION_SOUTHWEST:
             case MOVEMENT_DIRECTION_SOUTH:
                 // Key swipe down action. Type hint special key.
                 // TODO: Change KeyGraphics to new
                 onSwipedDown(x, y, eventTime);
                 break;
-            case MOVEMENT_DIRECTION_SOUTHEAST:
-            case MOVEMENT_DIRECTION_SOUTHWEST:
+            case MOVEMENT_DIRECTION_WEST:
                 onSwipedDownAlt(x, y, eventTime);
                 break;
-            case MOVEMENT_DIRECTION_WEST:
+            case MOVEMENT_DIRECTION_EAST:
                 break;
-            case MOVEMENT_DIRECTION_NORTHWEST:
-                break;
+
             case 0:
                 break;
         }
@@ -981,25 +980,21 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     private int getNewCodeOnSwipedKey(final Key key) {
         int code = 0;
         switch (mMovementDirection) {
+            // Key swipe up action. Type capitalized key
+            case MOVEMENT_DIRECTION_NORTHEAST:
             case MOVEMENT_DIRECTION_NORTH:
-                // Key swipe up action. Type capitalized key
+            case MOVEMENT_DIRECTION_NORTHWEST:
                 code = key.getCode(key.getLabel().toUpperCase());
                 break;
-            case MOVEMENT_DIRECTION_NORTHEAST:
-                break;
-            case MOVEMENT_DIRECTION_EAST:
-                break;
+            // Key swipe down action. Type hint special key.
             case MOVEMENT_DIRECTION_SOUTHEAST:
-                break;
             case MOVEMENT_DIRECTION_SOUTH:
-                // Key swipe down action. Type hint special key.
-                code = key.getHintLabelCode();
-                break;
             case MOVEMENT_DIRECTION_SOUTHWEST:
+                code = key.getHintLabelCode();
                 break;
             case MOVEMENT_DIRECTION_WEST:
                 break;
-            case MOVEMENT_DIRECTION_NORTHWEST:
+            case MOVEMENT_DIRECTION_EAST:
                 break;
             case 0:
                 break;
